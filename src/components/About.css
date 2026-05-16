@@ -1,0 +1,45 @@
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+/* Timeline */
+
+.timeline {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #38bdf8;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+.timeline-item h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
+  color: #cbd5e1;
+}
+
+.bullet-item{
+  display: list-item;
+  list-style-type: disc;
+  margin-left: 20px;
+}
