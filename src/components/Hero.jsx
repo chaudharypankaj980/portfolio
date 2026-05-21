@@ -17,7 +17,7 @@ const Hero = () => {
             Frontend Developer creating modern websites and user interfaces.
           </p>
 
-          <button>View Projects</button>
+          <button className="button-link" onClick={() => window.open("https://my-website-pied-six-74.vercel.app/", "_blank")}>View Projects</button>
         </div>
 
         <div className="hero-image">
