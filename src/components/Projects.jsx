@@ -1,30 +1,38 @@
-import React from "react";
 import "./Projects.css";
+
+const projects = [
+  {
+    title: "E-Commerce Website",
+    description: "Responsive shopping website UI with product browsing, clean cards, and mobile-ready layouts.",
+    stack: "React / CSS",
+  },
+  {
+    title: "Portfolio Website",
+    description: "Personal portfolio focused on responsive design, clear sections, and smooth navigation.",
+    stack: "React / Vite",
+  },
+  {
+    title: "Dashboard UI",
+    description: "Admin dashboard interface with organized data sections and a practical visual hierarchy.",
+    stack: "JavaScript / CSS",
+  },
+];
 
 const Projects = () => {
   return (
-    <div>
-      <section id="projects">
-        <h2 className="title">Projects</h2>
+    <section id="projects">
+      <h2 className="title">Projects</h2>
 
-        <div className="projects-container">
-          <div className="project-card">
-            <h3>E-Commerce Website</h3>
-            <p>Responsive shopping website UI.</p>
-          </div>
-
-          <div className="project-card">
-            <h3>Portfolio Website</h3>
-            <p>Modern portfolio with responsive design.</p>
-          </div>
-
-          <div className="project-card">
-            <h3>Dashboard UI</h3>
-            <p>Admin dashboard interface design.</p>
-          </div>
-        </div>
-      </section>
-    </div>
+      <div className="projects-container">
+        {projects.map((project) => (
+          <article className="project-card" key={project.title}>
+            <span>{project.stack}</span>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 };
 

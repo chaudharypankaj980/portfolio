@@ -1,28 +1,40 @@
-.cert-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-  margin-top:40px;
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
-.cert-card{
-  background:#1e293b;
-  padding:15px;
-  border-radius:12px;
-  text-align:center;
-  transition:0.3s;
+.cert-card {
+  background: rgba(30, 41, 59, 0.72);
+  padding: 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  transition: 0.25s ease;
+  overflow: hidden;
 }
 
-.cert-card:hover{
-  transform:scale(1.05);
+.cert-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(56, 189, 248, 0.42);
+  box-shadow: 0 24px 55px rgba(2, 6, 23, 0.28);
 }
 
-.cert-card img{
-  width:100%;
-  border-radius:10px;
+.cert-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
 
-.cert-card p{
-  margin-top:10px;
-  color:#cbd5e1;
+.cert-card p {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  color: #e2e8f0;
+  font-weight: 700;
+  line-height: 1.45;
 }

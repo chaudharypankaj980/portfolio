@@ -1,17 +1,10 @@
-import React from 'react'
-
-const CertificateCard = (props) => {
+const CertificateCard = ({ image, title }) => {
   return (
-    <>
-       <div className="cert-card">
+    <article className="cert-card">
+      <img src={image} alt={title} />
+      <p>{title}</p>
+    </article>
+  );
+};
 
-      <img src={props.image} alt="certificate" />
-
-      <p>{props.title}</p>
-
-    </div>
-    </>
-  )
-}
-
-export default CertificateCard
+export default CertificateCard;

@@ -1,24 +1,28 @@
-import React from "react";
 import "./Skills.css";
+
+const skills = [
+  { name: "HTML", level: "Advanced" },
+  { name: "CSS", level: "Advanced" },
+  { name: "JavaScript", level: "Intermediate" },
+  { name: "React", level: "Intermediate" },
+  { name: "SQL", level: "Intermediate" },
+  { name: "Power BI", level: "Intermediate" },
+];
 
 const Skills = () => {
   return (
-    <>
-      <div>
-        <section id="skills">
-          <h2 className="title">Skills</h2>
+    <section id="skills">
+      <h2 className="title">Skills</h2>
 
-          <div className="skills-container">
-            <div className="skill">HTML</div>
-            <div className="skill">CSS</div>
-            <div className="skill">JavaScript</div>
-            <div className="skill">React</div>
-            <div className="skill">SQL</div>
-            <div className="skill">Power BI</div>
-          </div>
-        </section>
+      <div className="skills-container">
+        {skills.map((skill) => (
+          <article className="skill" key={skill.name}>
+            <span>{skill.name}</span>
+            <small>{skill.level}</small>
+          </article>
+        ))}
       </div>
-    </>
+    </section>
   );
 };
 

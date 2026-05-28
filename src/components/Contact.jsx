@@ -1,20 +1,20 @@
-import React from "react";
 import "./Contact.css";
 import my_cv from "../assets/my_cv.pdf";
-import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div>
-      <section id="contact">
-        <h2 className="title">Contact</h2>
+    <section id="contact">
+      <h2 className="title">Contact</h2>
+
+      <div className="contact-panel">
+        <p>
+          Have a project, internship opportunity, or collaboration in mind? I am
+          open to frontend and MERN stack work.
+        </p>
 
         <div className="contact-icons">
-          <a
-            href="chaudharypankaj057@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="mailto:chaudharypankaj057@gmail.com" aria-label="Email Pankaj">
             <FaEnvelope />
           </a>
 
@@ -22,6 +22,7 @@ const Contact = () => {
             href="https://github.com/chaudharypankaj980"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub profile"
           >
             <FaGithub />
           </a>
@@ -30,11 +31,17 @@ const Contact = () => {
             href="https://www.linkedin.com/in/pankaj-chaudhary-b7b34529a"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn profile"
           >
             <FaLinkedin />
           </a>
 
-          <a href="https://wa.me/916290591977" target="_blank" rel="noreferrer">
+          <a
+            href="https://wa.me/916290591977"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="WhatsApp"
+          >
             <FaWhatsapp />
           </a>
         </div>
@@ -42,8 +49,8 @@ const Contact = () => {
         <a href={my_cv} download className="resume-btn">
           Download Resume
         </a>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

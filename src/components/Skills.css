@@ -1,18 +1,41 @@
-.skills-container{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  flex-wrap:wrap;
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 18px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-.skill{
-  background:#1e293b;
-  padding:15px 25px;
-  border-radius:30px;
-  transition:0.3s;
+.skill {
+  min-height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(30, 41, 59, 0.72);
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  transition: 0.25s ease;
 }
 
-.skill:hover{
-  background:#38bdf8;
-  color:#0f172a;
+.skill:hover {
+  transform: translateY(-6px);
+  border-color: rgba(245, 158, 11, 0.45);
+  box-shadow: 0 22px 48px rgba(2, 6, 23, 0.24);
+}
+
+.skill span {
+  color: #f8fafc;
+  font-size: 1.18rem;
+  font-weight: 800;
+}
+
+.skill small {
+  width: fit-content;
+  margin-top: 18px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: #99f6e4;
+  background: rgba(45, 212, 191, 0.1);
+  font-weight: 700;
 }

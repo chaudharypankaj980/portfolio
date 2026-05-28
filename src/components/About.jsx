@@ -1,83 +1,65 @@
-import React from "react";
 import "./About.css";
 
 const About = () => {
   return (
-    <>
-      <section id="about">
-        <h2 className="title">About Me</h2>
+    <section id="about">
+      <h2 className="title">About Me</h2>
 
-        <div className="about-container">
-          <p>
-            I am a passionate frontend developer who loves building modern and
-            responsive websites using react and JavaScript. I'm, currently
-            pursuing BCA from the institute of advance education and research.
-            I’m good with html, CSS, MS office, and I really enjoy working in a
-            team, solving problems, and learning new things.
-          </p>
+      <div className="about-container">
+        <p className="about-intro">
+          I am a passionate frontend developer who loves building modern,
+          responsive websites with React and JavaScript. I am currently pursuing
+          a BCA from the Institute of Advance Education and Research, and I enjoy
+          teamwork, problem solving, and learning new technologies.
+        </p>
 
-          {/* Timeline Section */}
-          <div className="timeline">
-            <div className="timeline-item">
-              <h3>🎓 Education</h3>
-              <p className="bullet-item">
+        <div className="timeline">
+          <article className="timeline-item">
+            <h3>Education</h3>
+            <ul>
+              <li>
                 Bachelor of Computer Applications (BCA) - Institute of Advance
                 Education and Research (IAER) (2023 - Present)
-              </p>
-              <br />
-              <p className="bullet-item">
+              </li>
+              <li>
                 Higher Secondary Education (NEB) - Bhanu Memorial English
                 Boarding Secondary School (2019 - 2021)
-              </p>
-              <br />
-              <p className="bullet-item">
+              </li>
+              <li>
                 Secondary Education (NEB) - Jaycee Bal Sadan MA VI (2010 - 2019)
-              </p>
-            </div>
+              </li>
+            </ul>
+          </article>
 
-            <div className="timeline-item">
-              <h3>💼 Experience</h3>
-              <p>
-                <p>Billing System with AI Integration</p>
-                <br />
-                <p className="bullet-item">
-                  Role: MERN Stack Developer Intern | Euphoria GenX / Techno
-                  Exponent
-                </p>
+          <article className="timeline-item featured">
+            <h3>Experience</h3>
+            <h4>Billing System with AI Integration</h4>
+            <ul>
+              <li>Role: MERN Stack Developer Intern | Euphoria GenX / Techno Exponent</li>
+              <li>Tech Stack: MongoDB, Express.js, React.js, Node.js, AI Integration</li>
+              <li>Developed a 120-hour comprehensive billing system.</li>
+              <li>
+                Integrated AI features to optimize billing workflows, improve
+                data processing, and support automation.
+              </li>
+            </ul>
+          </article>
 
-                <p className="bullet-item">
-                  Tech Stack: MongoDB, Express.js, React.js, Node.js, AI
-                  Integration
-                </p>
-                <p className="bullet-item">
-                  Key Contribution: Developed a 120-hour comprehensive billing
-                  system.
-                </p>
-                <p className="bullet-item">
-                  Highlight: Successfully integrated AI functionalities to
-                  optimize billing workflows and data processing, enhancing
-                  system automation.
-                </p>
-              </p>
-            </div>
-
-            <div className="timeline-item">
-              <h3>🏆 Certificates</h3>
-              <p>
-                Completed certifications in
-                <p className="bullet-item">HTML</p>
-                <p className="bullet-item">CSS</p>
-                <p className="bullet-item">JavaScript</p>
-                <p className="bullet-item">Excel</p>
-                <p className="bullet-item">React</p>
-                <p className="bullet-item">Node.js</p>
-                <p className="bullet-item">Innovation Ambassador</p>
-              </p>
-            </div>
-          </div>
+          <article className="timeline-item">
+            <h3>Certifications</h3>
+            <ul className="tag-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Excel</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Innovation Ambassador</li>
+            </ul>
+          </article>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
